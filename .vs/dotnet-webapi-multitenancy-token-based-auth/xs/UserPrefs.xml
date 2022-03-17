@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="Multiple Projects">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="dotnet-webapi-multitenancy-token-based-auth" expanded="True">
+            <Node name="Business" expanded="True">
+              <Node name="Services" expanded="True">
+                <Node name="UserService.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="Data" expanded="True">
+              <Node name="Concretes" expanded="True">
+                <Node name="DbFirst" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="WebApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{F44C1F53-C0CA-4FBF-9111-5C2EF94708F0}" ItemName="WebApi" ConfigurationId="Default" />
+        <StartupItem ItemId="{93C7C3B1-20BC-4DCE-9FAA-E30CAA9A1D65}" ItemName="WebUI" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

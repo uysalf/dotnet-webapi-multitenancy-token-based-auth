@@ -1,0 +1,35 @@
+﻿@model ProductModel
+
+<h1 class="h3">Product Create</h1>
+
+<form asp-controller="Product" asp-action="Create" method="POST">
+    <div class="container">
+        <div class="validation" asp-validation-summary="All"></div>
+        <div class="form-group row">
+            <label asp-for="Name" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" asp-for="Name">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Price" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input class="form-control" asp-format="{0:#,###.00}" asp-for="Price" min="0" step="0.01" vtype="number" value="0.00">
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Description" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" asp-for="Description">
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br />
+        <br />
+
+        @Html.ActionLink("Geri", "Index", "Product")
+    </div>
+</form>

@@ -1,0 +1,17 @@
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/bin/Debug/net5.0/Business.deps.json
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/bin/Debug/net5.0/Business.dll
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/bin/Debug/net5.0/ref/Business.dll
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/bin/Debug/net5.0/Business.pdb
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/bin/Debug/net5.0/Data.dll
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/bin/Debug/net5.0/Entity.dll
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/bin/Debug/net5.0/Data.pdb
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/bin/Debug/net5.0/Entity.pdb
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/obj/Debug/net5.0/Business.csproj.AssemblyReference.cache
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/obj/Debug/net5.0/Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/obj/Debug/net5.0/Business.AssemblyInfoInputs.cache
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/obj/Debug/net5.0/Business.AssemblyInfo.cs
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/obj/Debug/net5.0/Business.csproj.CoreCompileInputs.cache
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/obj/Debug/net5.0/Business.csproj.CopyComplete
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/obj/Debug/net5.0/Business.dll
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/obj/Debug/net5.0/ref/Business.dll
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Business/obj/Debug/net5.0/Business.pdb

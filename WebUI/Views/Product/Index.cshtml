@@ -1,0 +1,75 @@
+﻿@model ProductListModel
+
+@{
+    ViewData["Title"] = "Product Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@Html.ActionLink("Yeni Ürün Ekle", "Create", "Product")
+
+@if (TempData["Success"] != null)
+{
+    <p class="alert alert-success" id="successMessage">@TempData["Success"]</p>
+}
+
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model.Products)
+            {
+                <tr>
+                    <td>@p.Id</td>
+                    <td>@p.Name</td>
+                    <td>@p.Price</td>
+                    <td>@p.Description</td>
+                    <td class="test"><button id="product_update_@p.Id" data-id="@p.Id" type="button" class="btn btn-primary btn-sm product-update">Güncelle</button></td>
+                    <td><button id="product_delete_@p.Id" data-id="@p.Id" type="button" class="btn btn-primary btn-sm product-delete">Sil</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+@section Scripts{
+    <script type="text/javascript">$(document).ready(function () {
+            $(".product-update").click(function (e) {
+                e.preventDefault();
+                var productId = $(this).data('id');
+                document.location = "/Product/Update/" + productId;
+            });
+
+            $(".product-delete").click(function (e) {
+                e.preventDefault();
+                var productId = $(this).data('id');
+                if (confirm('Silmek istediğineze emin misiniz?')) {
+                    var model = { id: productId };
+                    $.ajax({
+                        type: "POST",
+                        url: '/Product/Delete',
+                        //contentType: "application/json; charset=utf-8",
+                        data: { id: productId },
+                        success: function (data) {
+                            $("#product_delete_" + productId).closest('tr').remove();
+                        },
+                        error: function (data) {
+                            alert("işlem hata ")
+                        }
+                    })
+                }
+            });
+
+        });</script>
+}

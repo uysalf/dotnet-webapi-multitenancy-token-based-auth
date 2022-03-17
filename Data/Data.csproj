@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Concretes\" />
+    <None Remove="Abstracts\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="ModelConfigurations\" />
+    <None Remove="Concretes\SecondDb\" />
+    <None Remove="Concretes\Repositories\" />
+    <None Remove="Microsoft.IdentityModel.Tokens" />
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Concretes\" />
+    <Folder Include="Abstracts\" />
+    <Folder Include="ModelConfigurations\" />
+    <Folder Include="Concretes\DbSecond\" />
+    <Folder Include="Concretes\Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.14">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.14" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.16.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj" />
+  </ItemGroup>
+</Project>

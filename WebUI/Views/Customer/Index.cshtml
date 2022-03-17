@@ -1,0 +1,76 @@
+﻿@model CustomerListModel
+
+@{
+    ViewData["Title"] = "Customer Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@Html.ActionLink("Yeni Müşteri Ekle", "Create", "customer")
+@if (TempData["Success"] != null)
+{
+    <p class="alert alert-success" id="successMessage">@TempData["Success"]</p>
+}
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>PhoneNumber</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in Model.Customers)
+            {
+                <tr>
+                    <td>@c.Id</td>
+                    <td>@c.FirstName</td>
+                    <td>@c.LastName</td>
+                    <td>@c.PhoneNumber</td>
+                    <td>@c.Email</td>
+                    <td>@c.City</td>
+                    <td class="test"><button id="customer_update_@c.Id" data-id="@c.Id" type="button" class="btn btn-primary btn-sm customer-update">Güncelle</button></td>
+                    <td><button id="customer_delete_@c.Id" data-id="@c.Id" type="button" class="btn btn-primary btn-sm customer-delete">Sil</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+@section Scripts{
+    <script type="text/javascript">$(document).ready(function () {
+            $(".customer-update").click(function (e) {
+                e.preventDefault();
+                var customerId = $(this).data('id');
+                document.location = "/Customer/Update/" + customerId;
+            });
+
+            $(".customer-delete").click(function (e) {
+                e.preventDefault();
+                var customerId = $(this).data('id');
+                if (confirm('Silmek istediğineze emin misiniz?')) {
+                    var model = { id: customerId };
+                    $.ajax({
+                        type: "POST",
+                        url: '/Customer/Delete',
+                        //contentType: "application/json; charset=utf-8",
+                        data: { id: customerId },
+                        success: function (data) {
+                            $("#customer_delete_" + customerId).closest('tr').remove();
+                        },
+                        error: function (data) {
+                            alert("işlem hata ")
+                        }
+                    })
+                }
+            });
+
+        });</script>
+}

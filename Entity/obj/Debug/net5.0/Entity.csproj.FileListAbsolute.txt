@@ -1,0 +1,12 @@
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/bin/Debug/net5.0/Entity.deps.json
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/bin/Debug/net5.0/Entity.dll
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/bin/Debug/net5.0/ref/Entity.dll
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/bin/Debug/net5.0/Entity.pdb
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/obj/Debug/net5.0/Entity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/obj/Debug/net5.0/Entity.AssemblyInfoInputs.cache
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/obj/Debug/net5.0/Entity.AssemblyInfo.cs
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/obj/Debug/net5.0/Entity.csproj.CoreCompileInputs.cache
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/obj/Debug/net5.0/Entity.dll
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/obj/Debug/net5.0/ref/Entity.dll
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/obj/Debug/net5.0/Entity.pdb
+/Users/fatihuysal/Projects/TFS/dotnet-webapi-multitenancy-token-based-auth/Entity/obj/Debug/net5.0/Entity.csproj.AssemblyReference.cache
