@@ -1,4 +1,6 @@
 # dotnet-webapi-multitenancy-token-based-auth
+
+Video Anlatım: https://www.youtube.com/watch?v=Hyc9cIqBxJM
  
 Bu uygulama Multi Tenant yapısı ile geliştirildi. Kullanıcılar birden fazla veribanına aynı uygulama üzerinden erişim gerçekleştirebilecek. Bu erişimi de sadece yetkisi olduğu kısımlarda gerçekleştirebilecek.​
 
