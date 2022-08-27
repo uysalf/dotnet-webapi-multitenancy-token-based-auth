@@ -1,5 +1,28 @@
 # dotnet-webapi-multitenancy-token-based-auth
 
+
+*******************************************************
+Ön Not:
+Bu projeyi entity framework 5.. ile geliştirdiğim için öncelikle bilgisayarınızda kurulu entity framework versiyonunu aşağıdaki şekilde edebilirsin. 
+*******  dotnet ef --version. *******
+versiyonun 5.. ise;
+
+Migration klasörü WebApi içinde olduğu için terminalde solution içindeki "WebApi" ye gidip, burada sırası ile çalıştırması gereken iki scrpit var
+*******   dotnet ef database update --context FirstDbContext    *******
+bu tamamlandıktan sonra
+*******   dotnet ef database update --context SecondDbContext   *******
+bu işlemlerden sonra sqlServerında iki tane Database oluşacaktır. 
+*******************************************************
+
+
+
+
+
+
+
+
+
+
 Video Anlatım: https://www.youtube.com/watch?v=Hyc9cIqBxJM
  
 Bu uygulama Multi Tenant yapısı ile geliştirildi. Kullanıcılar birden fazla veribanına aynı uygulama üzerinden erişim gerçekleştirebilecek. Bu erişimi de sadece yetkisi olduğu kısımlarda gerçekleştirebilecek.​
@@ -24,5 +47,6 @@ Business: Data katmanıdan çektiğimiz verileri Api katmanına ileten katman bu
 WebApi: Web Api servislerimiz burada yer alacak.​
 
 WebUI: WebApi servislerini kullanan ön yüz uygulaması​
+
 
 
