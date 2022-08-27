@@ -8,9 +8,14 @@ Bu projeyi entity framework 5.. ile geliştirdiğim için öncelikle bilgisayar�
 versiyonun 5.. ise;
 
 Migration klasörü WebApi içinde olduğu için terminalde solution içindeki "WebApi" ye gidip, burada sırası ile çalıştırması gereken iki scrpit var
-*******   dotnet ef database update --context FirstDbContext    *******
+
+dotnet ef database update --context FirstDbContext
+
 bu tamamlandıktan sonra
-*******   dotnet ef database update --context SecondDbContext   *******
+
+
+dotnet ef database update --context SecondDbContext
+
 bu işlemlerden sonra sqlServerında iki tane Database oluşacaktır. 
 *******************************************************
 
